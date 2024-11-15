@@ -28,9 +28,9 @@ document.querySelector('.contact-form').addEventListener('submit', function(e) {
     const email = document.getElementById('email').value.trim();
     const message = document.getElementById('message').value.trim();
 
-    if (name === "" || email === "" || message === "") {
+    if (!name || !email || !message) {
         alert("Mohon lengkapi semua bidang di formulir kontak.");
-        e.preventDefault(); // Mencegah pengiriman formulir jika ada bidang kosong
+        e.preventDefault();
     } else if (!validateEmail(email)) {
         alert("Mohon masukkan alamat email yang valid.");
         e.preventDefault();

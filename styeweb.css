@@ -249,7 +249,6 @@ form label {
     color: #333;
     /* Efek gradient pada teks */
     background: linear-gradient(90deg, #ff3300, #ff4d00);
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .teksproduk{
